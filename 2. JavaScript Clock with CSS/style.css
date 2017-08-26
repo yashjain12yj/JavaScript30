@@ -1,0 +1,17 @@
+html{
+	background: #95a5a6;
+	background-size: cover;
+	font-family: 'helvetica neue';
+	text-align: center;
+	font-size: 10px;
+}
+
+body{
+	margin: 0;
+	font-size: 2rem;
+	display: flex;
+	flex: 1;
+	min-height: 100vh;
+	align-items: center;
+}
+
