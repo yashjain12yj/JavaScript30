@@ -1,13 +1,13 @@
-html {
+html{
     color:black;
     font-family: sans-serif;
 }
 
-body {
+body{
     margin: 0;
 }
 
-.hero {
+.hero{
     min-height: 100vh;
     display:flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     color:black;
 }
 
-h1 {
+h1{
     text-shadow: 10px 10px 0 rgba(0,0,0,1);
     font-size: 100px;
 }
