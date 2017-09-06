@@ -8,21 +8,29 @@
 		<ul id="bands"></ul>
 		<script type="text/javascript">
 			const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+
 			const list = document.querySelector('#bands');
+			
 			let li = "";
+			
+			function strip(band){
+				return band.replace(/^(a |the |an)/i,'').trim()
+			}
+			
 			//sorting without articles
-			bands.sort((band) => {
-				band.trim("A")
-				band.trim("An")
-				band.trim("The")
-				band.trim()
-				console.log(band)
-				return band
+			bands.sort( (a, b) => {
+				if (strip(a) > strip(b)) {
+					return 1
+				}else{
+					return -1
+				}
 			});
 
 			bands.forEach(band => (li += `<li>🔥${band}</li>`));
 			list.innerHTML = li;
+			
 			console.log(li)
+
 		</script>
 	</body>
 </html>
